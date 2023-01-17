@@ -9,9 +9,9 @@ const outputRef = document.querySelector('#name-output');
 placeholderRef.addEventListener('input', onInput);
 
 function onInput(event) {
-  const { value } = event.currentTarget;
-
-    value === ''
+  const {value} = event.currentTarget;
+console.log(value);
+  value === ''
       ? (outputRef.textContent = 'Anonymous')
       : (outputRef.textContent = value.trim());
 
